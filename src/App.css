@@ -1,0 +1,13 @@
+.btn {
+  background-color: #c0c0c0c7;
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: silver;
+  }
+
+  &:active {
+    transform: scale(.98);
+  }
+}

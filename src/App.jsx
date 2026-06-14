@@ -1,22 +1,20 @@
-import { useState } from "react";
-import Nav from "./Nav";
 
+import "./App.css"
+import Nav from "./components/Nav";
 
+const mealsPromises = fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=a')
+  .then(res => res.json())
 
 const App = () => {
-  const [num, setNum] = useState(0)
-  function increaseNums() {
-    setNum(num + 1);
-  };
-  // console.log(num)
+
   return (
     <>
       <Nav></Nav>
-      <h1>My Numbers: {num}</h1>
-      <button onClick={increaseNums} className="btn">Increase Nums: {num}</button>
 
     </>
   )
+
+
 };
 
 export default App;
