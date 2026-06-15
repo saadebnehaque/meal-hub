@@ -3,6 +3,7 @@
     padding: 0;
     border: none;
     background: none;
+    box-sizing: border-box;
 }
 
 .nav {
@@ -17,10 +18,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    img{
-        height: 50px;
-        width: 50px;
+    gap: 10px;
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background: #8080809e;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
         border-radius: 50%;
     }
 }
@@ -30,4 +45,17 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+    p {
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
 }

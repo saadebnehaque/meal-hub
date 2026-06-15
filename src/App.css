@@ -1,7 +1,8 @@
-.btn {
+button {
   background-color: #c0c0c0c7;
   padding: 6px 10px;
   border-radius: 6px;
+  transition: all 0.2ms ease-in-out;
 
   &:hover {
     background-color: silver;
@@ -9,5 +10,81 @@
 
   &:active {
     transform: scale(.98);
+  }
+}
+
+.mainContainer {
+  display: flex;
+  margin: 100px auto;
+  gap: 0;
+
+  .foodContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+
+    .foodCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid salmon;
+      gap: 10px;
+      width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+
+}
+
+.spinner {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 15px solid salmon;
+  border-top: 15px solid white;
+  background: transparent;
+  animation: spin 1s linear infinite;
+  margin: auto;
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinnerContainer {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 200px;
+}
+
+.cartContainer {
+  border: 2px solid salmon;
+  width: 20%;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 50px auto 0;
+
+  h1 {
+    text-align: center;
   }
 }

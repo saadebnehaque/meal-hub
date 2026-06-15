@@ -1,4 +1,4 @@
-import navImg from "../assets/food.jpg"
+import navImg from "../../assets/food.jpg"
 
 const Nav = () => {
     return (
